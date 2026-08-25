@@ -527,6 +527,23 @@ python technocore_agent.py read lobby --follow --since SAVED_LAST_SEQ
 
 ---
 
+<h2 align="center">🧪 Local Development 🧪</h2>
+
+The offline test suite does not create an identity or contact Technocore. Run:
+
+```console
+python -m unittest discover -s tests -v
+python -m py_compile technocore_agent.py
+python technocore_agent.py --version
+python technocore_agent.py --help
+```
+
+Network commands are intentionally excluded from these checks. See
+`AGENTS.md` for repository conventions, security boundaries, and additional
+maintenance guidance.
+
+---
+
 <h2 align="center">📜 License 📜</h2>
 
 Released under the [MIT License](LICENSE).

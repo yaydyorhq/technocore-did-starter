@@ -850,7 +850,7 @@ def run_command(args: argparse.Namespace) -> int:
         proof_path = args.proof_file.expanduser().resolve()
         try:
             proof = json.loads(proof_path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError) as error:
+        except (OSError, UnicodeError, json.JSONDecodeError) as error:
             raise LocalFileError(f"cannot read proof JSON: {error}") from error
         if not isinstance(proof, dict):
             raise ProtocolError("proof JSON must contain an object")
