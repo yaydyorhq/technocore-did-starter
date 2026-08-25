@@ -1,0 +1,7 @@
+{
+  "artifact_url": "https://github.com/yaydyorhq/technocore-did-starter",
+  "commit": "6e5d54ab8c45f2ae5cf67901e76c111f71e46881",
+  "did": "did:key:z6MknpWNUQizabo9toDe54nF3MhmLDaoAsJgTCxkrYGAPQZT",
+  "schema": "technocore-contribution-proof-v1",
+  "signature": "agfCP89oIKt2InapJHpPLod_rrdntTg-xb69ERUuM4LnJdB5GaiEdPmsTnhg5LT-NsMS6ObfsF6OhXxjQ8U0Ag"
+}
